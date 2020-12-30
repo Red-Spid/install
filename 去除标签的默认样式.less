@@ -1,0 +1,164 @@
+html { //  默认字体样式设定
+    font-family: sans-serif;
+}
+// 清除元素 的默认样式
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,i,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-style: normal;
+    outline: none;
+    list-style: none;
+}
+
+// 列表样式去除
+ol,ul {
+    list-style: none;
+}
+
+// 输入框按钮去除样式
+input,button,textarea {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1em;
+    /*-webkit-appearance:none;*/
+    background-color: rgba(0, 0, 0, 0);
+}
+
+// 点击效果去除
+button{
+    outline-color:none;
+    outline: none;
+}
+
+//  字体样式设定
+.familyH(@family1 : "PingFangSC,PingFangSC-Regular"){
+    font-family: @family1;
+    font-size:10px;
+}
+html{
+    .familyH("微软雅黑");
+}
+
+html,body { // 禁用手机端时的默认属性 和字体最小值的去除
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    width: 100%;
+}
+
+// 变块处理
+nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure {
+    display: block;
+}
+
+// 变成行内元素
+img,a,button,em,del,strong,var,label,cite,small,time,mark,code,textarea {
+    display: inline-block;
+}
+
+// 新增容器做 相对处理
+header,section,footer,tbody {
+    position: relative;
+}
+
+/* a 标签时去除 激活 和移入时的效果 */
+a:active,a:hover {
+    outline: 0;
+}
+// a 标签的默认样式
+a,a:visited {
+    text-decoration: none;
+}
+
+label,.wordWrap {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,th {
+    padding: 0;
+}
+
+.loading_more:after {
+    content: '加载更多';
+}
+
+.item_bj {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+#wrap {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+/*火狐 下去除type ==  "number"  时 的右侧图标*/
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/*IE下去除 右边的×*/
+input::-ms-clear {
+    display: none;
+}
+
+/*基本样式*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.of {
+    overflow: hidden;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.cl {
+    clear: both;
+}
+.dis {
+    display: block;
+}
+.boxbor {
+    box-sizing: border-box;
+}
+
+
+/*超出隐藏-多行*/
+.text-hidden-n {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
