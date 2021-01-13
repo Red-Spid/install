@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recorder 使用方法</title>
+</head>
+<body>
+    <script>
+/*  https://blog.csdn.net/weixin_43088706/article/details/104000600 */
+//第一实例化，
+let recorder = new Recorder({
+        type:"wav",   //此处的type类型是可修改的
+        bitRate:16,      
+        sampleRate:16000,
+        bufferSize:8192,
+    })
+//第二调用api方法
+
+/**
+ *
+ *  
+ * // 开始录音
+ recorder.start();
+ // 结束录音
+ recorder.stop();
+ // 暂停录音
+ recorder.pause();
+
+ // 继续录音
+ recorder.resume()
+ // 录音播放
+ recorder.play();
+ // 销毁录音实例，释放资源，fn为回调函数，
+ recorder.destroy(fn);
+ recorder = null;
+ // 下载功能
+ // 下载pcm文件
+ recorder.downloadPCM();
+ // 下载wav文件
+ recorder.downloadWAV();
+ // 重命名pcm文件，wav也支持
+ recorder.downloadPCM('重命名');
+ // 获取录音时长
+ // 回调持续输出时长
+ recorder.onprocess = function (duration) {
+            console.log(duration);
+        }
+ // 手动获取录音时长
+ console.log(recorder.duration);
+//获取WAV音频文件
+recorder.getWAVBlob()
+//获取WAV音频文件MP4
+recorder.getMP4Blob()
+//获取WAV音频文件pcm
+recorder.getPCMBlob()
+
+*/
+
+    </script>
+</body>
+</html>
